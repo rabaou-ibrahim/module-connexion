@@ -34,6 +34,9 @@ if (isset($_POST['Nouveau_password_confirm'])) {
     } 
     elseif (($_POST['Nouveau_password_confirm'] === "admin")) {
       echo ("Vous ne pouvez pas avoir 'admin' comme mot de passe");
+      echo ('<br>');
+      echo ('<br>');
+      echo ("<a href='../profil.php'><button>Retour</button></a>");
       exit();
     } 
     else {

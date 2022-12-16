@@ -30,6 +30,9 @@ if (isset($_POST['Nouveau_login_confirmer'])) {
 
   elseif (($_POST['Nouveau_login_confirm'] === "admin")) {
     echo ("Vous ne pouvez pas avoir 'admin' comme login");
+    echo ('<br>');
+    echo ('<br>');
+    echo ("<a href='../profil.php'><button>Retour</button></a>");
     exit();
   }
 
